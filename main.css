@@ -393,5 +393,68 @@ body {
 
     /* Penutup About*/
 
+    /* Footer */
 
+    .footer {
+        height: 100vh;
+        width: 100%;
+        padding: 16px 24px;
+    }
+
+    .container__text {
+        height: 100%;
+        background-color: #f5f5f5;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 8px;
+    }
+
+    .container__title h1 {
+        font-size: 132px;
+    }
+
+    .container__p {
+        margin-bottom: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .ctacontact {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .ctacontact a {
+        font-size: 1.2rem;
+        color: #0f0f0f;
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .socialmedia {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .socialmedia a {
+        font-size: 1.2rem;
+        color: #0f0f0f;
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .copyr {
+        color: #f5f5f5;
+        font-size: 14px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        text-align: center;
+    }
 }
