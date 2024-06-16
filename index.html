@@ -24,6 +24,10 @@
     <!-- UNICONS -->
     <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"> -->
 
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
 </head>
 <body>
     <div class="progress-wrap">
@@ -37,10 +41,10 @@
             <a href="#"><img src="assets/img/logolight.png" alt="logo"></a>
         </div>
         <ul>
-            <li><a href="#">Project</a></li>
+            <li><a href="#" class="active">Project</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Playground</a></li>
-            <a class="ctaresume" href="#">Resume</a>
+            <a class="ctaresume" href="assets/docs/Alfian Nur Kholilludin Resume 2023.pdf">Resume</a>
         </ul>
         <div class="hamburgermenu">
             <input type="checkbox">
@@ -50,97 +54,97 @@
         </div>
     </nav>
 
-    <div class="herosect">
+    <section class="herosect">
         <h1>Hi There! I'm Alfian Nur, who Creating Visual Journeys for Digital Products</h1>
         <div class="textwithspan">
             <hr class="garis"></hr>
             <h3>Based in Indonesia, Bekasi</h3>
         </div>
-    </div>
+    </section>
 
-    <div class="contentsect">
-        <div class="title__content">
-            <h1>Selected Project</h1>
-        </div>
-        <div class="wrappercard__content">
-            <div class="card__content">
-                <div class="img__card">
-                    <div class="iconwithtext__content">
-                        <div class="dot green"></div>
-                        <h4>On Live</h4>
-                    </div>
-                    <a href="#"><img src="assets/img/project/work1.png" alt="project1"></a>
-                </div>
-                <div class="text__content">
-                    <h2>Balifiber Instant WiFi</h2>
-                    <p>Unlimited WiFi internet that can be accessed by the general public for free</p>
+    <section class="content__sect">
+        <div class="wrapper__content">
+            <div class="wrapper__card1">
+                <a href="#"><video class="video__card1" src="assets/video/test.mp4" autoplay loop></video></a>
+                <div class="text__card1">
+                    <h3>ART DIRECTION • 3D</h3>
+                    <a class="cta__card1" href="#">Animation Mockups</a>
                 </div>
             </div>
-            <div class="card__content">
-                <div class="img__card">
-                    <div class="iconwithtext__content">
-                        <div class="dot green"></div>
-                        <h4>On Live</h4>
+            <div class="wrapper__card">
+                <div class="card">
+
+                    <div class="img__card"></div>
+                    <div class="text__card">
+                        <h3>UI DESIGNER • UX DESIGNER</h3>
+                        <h1>Balifiber Instant WiFi</h1>
                     </div>
-                    <a href="#"><img src="assets/img/project/work2.png" alt="project1"></a>
                 </div>
-                <div class="text__content">
-                    <h2>PT Paramitra Intimega</h2>
-                    <p>PT Paramitra Inti Mega ("PIM") operates in infrastructure, services and trading in the telecommunications sector</p>
+                <div class="card">
+                    <div class="img__card2"></div>
+                    <div class="text__card">
+                        <h3>PRODUCT DESIGNER • UI DESIGNER</h3>
+                        <h1>PT Paramitra Inti Mega</h1>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="wrappercard__content">
-            <div class="card__content">
-                <div class="img__card">
-                    <div class="iconwithtext__content">
-                        <div class="dot green"></div>
-                        <h4>On Live</h4>
+            <div class="wrapper__card">
+                <div class="card">
+                    <div class="img__card3"></div>
+                    <div class="text__card">
+                        <h3>UI DESIGNER • UX DESIGNER</h3>
+                        <h1>Anugerah Cipta Moulding Indonesia</h1>
                     </div>
-                    <a href="#"><img src="assets/img/project/work1.png" alt="project1"></a>
                 </div>
-                <div class="text__content">
-                    <h2>Balifiber Instant WiFi</h2>
-                    <p>Unlimited WiFi internet that can be accessed by the general public for free</p>
-                </div>
-            </div>
-            <div class="card__content">
-                <div class="img__card">
-                    <div class="iconwithtext__content">
-                        <div class="dot green"></div>
-                        <h4>On Live</h4>
+                <div class="card">
+                    <div class="img__card4"></div>
+                    <div class="text__card">
+                        <h3>PRODUCT DESIGNER • UI DESIGNER</h3>
+                        <h1>Motekar Digital Kreasi</h1>
                     </div>
-                    <a href="#"><img src="assets/img/project/work2.png" alt="project1"></a>
-                </div>
-                <div class="text__content">
-                    <h2>PT Paramitra Intimega</h2>
-                    <p>PT Paramitra Inti Mega ("PIM") operates in infrastructure, services and trading in the telecommunications sector</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="footer">
-        <div class="container__text">
-            <div class="container__title">
-                <h1>SAY</h1>
-                <h1>HI</h1>
-            </div>
-            <div class="container__p">
-                <div class="ctacontact">
-                    <box-icon name='envelope' color='gray' size='sm'></box-icon>
-                    <a href="mailto:alfiannurkholilludin@gmail.com">contact me</a>
-                </div>
-                <div class="socialmedia">
-                    <a href="https://www.instagram.com/alfian.design20/">instagram</a>
-                    <a href="https://dribbble.com/Alfiannurk">dribbble</a>
-                </div>
+    <section class="service" id="service">
+        <!-- <div id="particles-js"></div>
+        stats - count particles
+        <div class="count-particles">
+            <span class="js-count-particles">--</span> particles
+        </div> -->
+        <div class="wrapper__service">
+            <div class="text1__service">
+                <h1>UIUX, <span>Branding, </span><br><span>3D, </span><span>Illustration</span></h1>
             </div>
         </div>
-        <p class="copyr">All rights reserved 2024 | Made by with passion</p>
-    </div>
+    </section>
+
+    <section class="footer" id="footer">
+        <div class="wrappertitle__footer">
+            <div class="wrapper__textfoot">
+                <div class="title__footer">
+                    <h1 id="textfooter">I'm looking for<br>new challange</h1>
+                </div>
+                <div class="social__footer">
+                    <a href="#">Instagram</a>
+                    <a href="#">Dribbble</a>
+                    <a href="#">Behance</a>
+                    <a href="#">Linkedin</a>
+                    <a href="mailto:alfiannurkholliludin@gmail.com">Email</a>
+                </div>
+            </div>
+            <div class="wrapperbigtext__footer">
+                <h1>ALFIAN NUR</h1>
+            </div>
+        </div>
+    </section>
 
 
+    <!-- Particle JS
+    <script src="assets/js/particles.js"></script> -->
+    <!-- Lenis Scroll -->
+    <script src="https://unpkg.com/lenis@1.1.3/dist/lenis.min.js"></script>
     <!-- My JS -->
     <script src="assets/js/app.js"></script>
     <!-- AOS JS -->

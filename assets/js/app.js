@@ -1,3 +1,35 @@
+// let footer = document.getElementById('service');
+
+// window.addEventListener('scroll', () => {
+
+//     let value = window.scrollY;
+
+//     footer.style.marginBottom = value * 2.5 + 'px';
+// });
+
+
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+lenis.on('scroll', ScrollTrigger.update)
+
+gsap.ticker.add((time)=>{
+  lenis.raf(time * 1000)
+})
+
+gsap.ticker.lagSmoothing(0)
+
+// use a script tag or an external JS file
+document.addEventListener("DOMContentLoaded", (event) => {
+    gsap.registerPlugin(ScrollTrigger)
+    // gsap code here!
+    
+});
+
+
 function hamburgertoggle() {
     const menuToggle = document.querySelector('.hamburgermenu input');
     const nav = document.querySelector('nav ul');
