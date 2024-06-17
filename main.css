@@ -249,7 +249,7 @@ nav ul li a.active {
 
 /* Mobile base */
 
-@media screen and (max-width: 375px) and (min-width: 360px) {
+@media screen and (max-width: 480px) and (min-width: 320px) {
 
     /* Button Back to Top */
     @-webkit-keyframes border-transform {
