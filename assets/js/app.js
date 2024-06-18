@@ -7,6 +7,25 @@
 //     footer.style.marginBottom = value * 2.5 + 'px';
 // });
 
+gsap.registerPlugin(ScrollTrigger)
+
+const splitType = document.querySelectorAll('.reveal-type')
+
+splitType.forEach((char,i) => {
+    const text = new SplitType(char, {types: 'chars'})
+
+    gsap.from(text.char,{
+        ScrollTrigger: {
+            trigger: char,
+            start: 'top 80%',
+            end: 'top 20%',
+            scrub: true,
+            markers: false
+        },
+        opacity: 0.2,
+        stagger: 0.1
+    })
+})
 
 const lenis = new Lenis()
 
@@ -14,20 +33,28 @@ lenis.on('scroll', (e) => {
   console.log(e)
 })
 
-lenis.on('scroll', ScrollTrigger.update)
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
 
-gsap.ticker.add((time)=>{
-  lenis.raf(time * 1000)
-})
+requestAnimationFrame(raf)
 
-gsap.ticker.lagSmoothing(0)
 
-// use a script tag or an external JS file
-document.addEventListener("DOMContentLoaded", (event) => {
-    gsap.registerPlugin(ScrollTrigger)
-    // gsap code here!
-    
-});
+
+// const lenis = new Lenis()
+
+// lenis.on('scroll', (e) => {
+//   console.log(e)
+// })
+
+// lenis.on('scroll', ScrollTrigger.update)
+
+// gsap.ticker.add((time)=>{
+//   lenis.raf(time * 1000)
+// })
+
+// gsap.ticker.lagSmoothing(0)
 
 
 function hamburgertoggle() {
