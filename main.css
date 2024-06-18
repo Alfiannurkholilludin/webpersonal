@@ -235,25 +235,29 @@ nav ul li a.active {
 /* Penutup Hero */
 
 /* content */
-.content {
-    height: 90vh;
+section {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-.reveal-type {
-  color: #f5f5f5;
-  font-size: 3rem;
+section h1 {
+  font-size: 2.2rem;
 }
 
-/* content2 */
+section:nth-of-type(2) {
+  background: #f5f5f5;
+  border-bottom: 1px solid black;
+}
 
-.content2 {
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+section:nth-of-type(3) {
+  background: #ffff00;
+}
+
+section:nth-of-type(4) {
+  background: #1d1d1d;
+  color: white;
 }
 
 /* laptops */
