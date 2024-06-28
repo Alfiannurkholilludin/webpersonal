@@ -234,31 +234,106 @@ nav ul li a.active {
 
 /* Penutup Hero */
 
-/* content */
-section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+/* Content */
 
-section h1 {
-  font-size: 2.2rem;
+.contentsect {
+  height: auto;
+  padding: 24px 24px;
+  display: flex;
+  flex-direction: column;
 }
 
-section:nth-of-type(2) {
-  background: #f5f5f5;
-  border-bottom: 1px solid black;
+.wrapper_vid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-section:nth-of-type(3) {
-  background: #ffff00;
+.wrapper__card {
+  margin-top: 24px;
 }
 
-section:nth-of-type(4) {
-  background: #1d1d1d;
-  color: white;
+.video__card1 {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 16px;
 }
+
+.text__card1 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.text__card1 h3 {
+  color: rgba(255, 255, 255, .5);
+  letter-spacing: 5px;
+  font-size: 1.2rem;
+}
+
+.cta__card1 {
+  color: #f5f5f5;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  height: auto;
+}
+
+.img__card {
+  background-image: url('assets/img/project/work1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  border-radius: 16px;
+}
+
+.img__card2 {
+  background-image: url('assets/img/project/work2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  border-radius: 16px;
+}
+
+.text__card h1{
+  color: #f5f5f5;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.text__card h3 {
+  color: rgba(255, 255, 255, .5);
+  letter-spacing: 5px;
+  font-size: 1.2rem;
+}
+
+.wrapper__card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.text__card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
 
 /* laptops */
 
@@ -364,6 +439,41 @@ section:nth-of-type(4) {
       .herosect h1 {
         font-size: 5rem;
         line-height: 92px;
+      }
+
+      .textwithspan h3{
+        font-size: 1.5rem;
+      }
+
+      /* Penutup Hero */
+
+      /* content */
+      .video__card1 {
+        height: 550px;
+      }
+
+      .text__card1 h3 {
+        font-size: 1rem;
+      }
+
+      .cta__card1 {
+        font-size: 1.3rem;
+      }
+
+      .text__card h1{
+        font-size: 1.3rem;
+      }
+
+      .text__card h3 {
+        font-size: 1rem;
+      }
+
+      .img__card {
+        height: 400px;
+      }
+
+      .img__card2 {
+        height: 400px;
       }
 }
 
