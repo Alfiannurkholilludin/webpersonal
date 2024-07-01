@@ -256,7 +256,7 @@ nav ul li a.active {
 .video__card1 {
   width: 100%;
   height: 700px;
-  background-image: url('assets/img/project/work1.png');
+  background-image: url('assets/img/project/work3.webp');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
@@ -290,7 +290,7 @@ nav ul li a.active {
 }
 
 .img__card {
-  background-image: url('assets/img/project/work1.png');
+  background-image: url('assets/img/project/work1.webp');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -299,7 +299,7 @@ nav ul li a.active {
 }
 
 .img__card2 {
-  background-image: url('assets/img/project/work2.png');
+  background-image: url('assets/img/project/work2.webp');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
