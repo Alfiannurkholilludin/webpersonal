@@ -234,31 +234,212 @@ nav ul li a.active {
 
 /* Penutup Hero */
 
-/* content */
-section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Content */
+
+.contentsect {
+  height: auto;
+  padding: 24px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper_vid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.wrapper__card {
+  margin-top: 24px;
+}
+
+.video__card1 {
+  width: 100%;
+  height: 700px;
+  background-image: url('assets/img/project/work1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.text__card1 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.text__card1 h3 {
+  color: rgba(255, 255, 255, .5);
+  letter-spacing: 5px;
+  font-size: 1.2rem;
+}
+
+.cta__card1 {
+  color: #f5f5f5;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  height: auto;
+}
+
+.img__card {
+  background-image: url('assets/img/project/work1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  border-radius: 16px;
+}
+
+.img__card2 {
+  background-image: url('assets/img/project/work2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  border-radius: 16px;
+}
+
+.text__card h1{
+  color: #f5f5f5;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.text__card h3 {
+  color: rgba(255, 255, 255, .5);
+  letter-spacing: 5px;
+  font-size: 1.2rem;
+}
+
+.wrapper__card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.text__card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Penutup Content */
+
+/* Need a Designer Cta */
+
+.ctasect {
+  width: 100%;
+  height: 50vh;
+  padding: 24px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.wrapper__need h3{
+  color: rgba(255, 255, 255, .5);
+  letter-spacing: 5px;
+  font-size: 1.2rem;
+}
+
+.wrapper__cta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  /* background-color: aqua; */
+}
+
+.wrapper__cta a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.wrapper__cta a:hover {
+  color: #A1DD70;
+  transition: all 0.5s;
+}
+
+.wrapper__social{ 
+  display: flex;
+  gap: 24px;
+}
+
+.wrapper__social a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.wrapper__social a:hover {
+  color: #A1DD70;
+}
+
+/* Penutup */
+
+/* footer */
+
+.wrapper_foot {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 24px;
+}
+
+.img__foot {
+  background-image: url('assets/img/Footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 550px;
+}
+
+@media screen and (max-width: 1440px) {
+  /* Hero Sect */
+
+  .herosect h1 {
+    font-size: 5rem;
   }
 
-section h1 {
-  font-size: 2.2rem;
+  .textwithspan h3 {
+    font-size: 1.2rem;
+  }
+
+  /* Content */
+
+  .img__card {
+    height: 520px;
+  }
+
+  .img__card2 {
+    height: 520px;
+  }
+
+  /* Footer */
+
+  .img__foot {
+    height: 400px;
+  }
 }
 
-section:nth-of-type(2) {
-  background: #f5f5f5;
-  border-bottom: 1px solid black;
-}
 
-section:nth-of-type(3) {
-  background: #ffff00;
-}
-
-section:nth-of-type(4) {
-  background: #1d1d1d;
-  color: white;
-}
 
 /* laptops */
 
@@ -364,6 +545,46 @@ section:nth-of-type(4) {
       .herosect h1 {
         font-size: 5rem;
         line-height: 92px;
+      }
+
+      .textwithspan h3{
+        font-size: 1.5rem;
+      }
+
+      /* Penutup Hero */
+
+      /* content */
+      .video__card1 {
+        height: 550px;
+      }
+
+      .text__card1 h3 {
+        font-size: 1rem;
+      }
+
+      .cta__card1 {
+        font-size: 1.3rem;
+      }
+
+      .text__card h1{
+        font-size: 1.3rem;
+      }
+
+      .text__card h3 {
+        font-size: 1rem;
+      }
+
+      .img__card {
+        height: 400px;
+      }
+
+      .img__card2 {
+        height: 400px;
+      }
+
+      /* Footer */
+      .img__foot {
+        height: 350px;
       }
 }
 
@@ -846,5 +1067,31 @@ section:nth-of-type(4) {
     }
 
     /* Penutup Hero */
+
+    /* content */
+
+    .video__card1{
+      height: 235px;
+    }
+
+    .text__card1 h3{
+      font-size: 0.9rem;
+    }
+
+    .wrapper__card {
+      flex-direction: column;
+    }
+
+    .img__card {
+      height: 230px;
+    }
+
+    .img__card2 {
+      height: 230px;
+    }
+
+    .text__card h3{
+      font-size: 0.9rem;
+    }
 
 }
