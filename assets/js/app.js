@@ -7,25 +7,36 @@
 //     footer.style.marginBottom = value * 2.5 + 'px';
 // });
 
+
 gsap.registerPlugin(ScrollTrigger)
 
 const splitTypes = document.querySelectorAll('.reveal-type')
 
-splitTypes.forEach((char,i) => {
-    const text = new SplitType(char, {types: 'chars'})
+        splitTypes.forEach((char,i) => {
 
-    gsap.from (text.char,{
-        ScrollTrigger: {
-            trigger: char,
-            start: 'top 80%',
-            end: 'top 20%',
-            scrub: true,
-            markers: false
-        },
-        opacity: 0.2,
-        stagger: 0.1
-    })
-})
+            const bg = char.dataset.bgColor
+            const fg = char.dataset.fgColor
+
+            const text = new SplitType(char, { types: 'chars'})
+
+            gsap.fromTo(text.chars, 
+                {
+                    color: bg,
+                },
+                {
+                    color: fg,
+                    duration: 0.3,
+                    stagger: 0.02,
+                    scrollTrigger: {
+                        trigger: char,
+                        start: 'top 80%',
+                        end: 'top 20%',
+                        scrub: true,
+                        markers: false,
+                        toggleActions: 'play play reverse reverse'
+                    }
+            })
+        })
 
 const lenis = new Lenis()
 
@@ -117,3 +128,19 @@ $(document).ready(function() {
 });
 
 hamburgertoggle();
+
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+          },
+    },
+  });

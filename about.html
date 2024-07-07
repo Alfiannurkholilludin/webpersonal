@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About of me | Personal Website</title>
 
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon/android-chrome-192x192.png">
+
     <!-- My CSS -->
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="about.css">
@@ -25,6 +27,11 @@
 
     <!-- UNICONS -->
     <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"> -->
+
+    <!-- Swiper JS -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    
 
 </head>
 <body>
@@ -58,28 +65,105 @@
             <h1 class="title__text">I'm Alfian Nur, who passionate UI and Product Designer dedicated to crafting exceptional digital experiences. With a solid foundation in technic informatics and a keen understanding of user-centric principles, I specialize in creating intuitive and visually stunning interfaces.</h1>
             <h2 class="subtitle__text">Over the past 3 years i have been working with big companies and rising startups in the country as a UI designer and working solo like freelance project.</h2>
         </div>
-        <div class="img__intro"></div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/img/profile/Slider 1.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/profile/Slider 2.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/profile/Slider 3.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+            </div>
+             <!-- pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
 
-    <section class="deep__Sect">
-        
+    <section class="text-animate">
+        <div class="wrapper__txanimate">
+            <h1 class="reveal-type" data-bg-color="#0f0f0f" data-fg-color="#A1DD70">what i'm known for</h1>
+        </div>
     </section>
 
-     <!-- GSAP -->
-     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-     <!-- Split Type -->
-     <script src="https://unpkg.com/split-type"></script>
-     <!-- Particle JS
-     <script src="assets/js/particles.js"></script> -->
-     <!-- Lenis Scroll -->
-     <script src="https://unpkg.com/lenis@1.1.3/dist/lenis.min.js"></script>
-     <!-- My JS -->
-     <script src="assets/js/app.js"></script>
-     <!-- AOS JS -->
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-     <script>
-         AOS.init();
-     </script>
+    <section class="text-animate">
+        <div class="wrapper__txanimate">
+            <h1 class="reveal-type" data-bg-color="#0f0f0f" data-fg-color="#A1DD70">user research</h1>
+        </div>
+    </section>
+
+    <section class="text-animate">
+        <div class="wrapper__txanimate">
+            <h1 class="reveal-type" data-bg-color="#0f0f0f" data-fg-color="#A1DD70">product design</h1>
+        </div>
+    </section>
+
+    <section class="text-animate">
+        <div class="wrapper__txanimate">
+            <h1 class="reveal-type" data-bg-color="#0f0f0f" data-fg-color="#A1DD70">user experience design</h1>
+        </div>
+    </section>
+
+    <section class="text-animate">
+        <div class="wrapper__txanimate">
+            <h1 class="reveal-type" data-bg-color="#0f0f0f" data-fg-color="#A1DD70">design strategy</h1>
+        </div>
+    </section>
+
+    <section class="text-animate">
+        <div class="wrapper__txanimate">
+            <h1 class="reveal-type" data-bg-color="#0f0f0f" data-fg-color="#A1DD70">high fidelity prototyping</h1>
+        </div>
+    </section>
+
+    <section class="text-animate">
+        <div class="wrapper__txanimate">
+            <h1 class="reveal-type" data-bg-color="#0f0f0f" data-fg-color="#A1DD70">wireframing</h1>
+        </div>
+    </section>
+
+    <section class="iseng"></section>
+
+    <!-- <section>
+        <h1>Scroll down for awesomeness.</h1>
+    </section>
+
+    <section>
+        <p class="reveal-type" data-bg-color="#cccccc" data-fg-color="#A1DD70">Systematically ushering in a new generation of amazing designers from across the globe.</p>
+    </section>
+
+    <section>
+        <p class="reveal-type" data-bg-color="#b6b600" data-fg-color="black">Modern UI designers will expand their skillsets to include frontend.</p>
+    </section>
+
+    <section>
+        <p class="reveal-type" data-bg-color="#353535" data-fg-color="red">The web isn't static anymore, interactivity and motion now dominate.</p>
+    </section>
+
+    <section></section> -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- Split Type -->
+    <script src="https://unpkg.com/split-type"></script>
+    <!-- Particle JS
+    <script src="assets/js/particles.js"></script> -->
+    <!-- Lenis Scroll -->
+    <script src="https://unpkg.com/lenis@1.1.3/dist/lenis.min.js"></script>
+    <!-- My JS -->
+    <script src="assets/js/app.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
